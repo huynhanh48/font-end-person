@@ -5,7 +5,83 @@
 }
 html{
     font-family: "Poppins",sans-serif;
-}
-body{
     font-size: 62.5%;
 }
+body{
+    font-size: 1.6rem;
+    scroll-behavior: smooth;
+}
+/* ====================common===================== */
+a{
+    text-decoration: none;
+    color: #000;
+}
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 186px;
+    height: 68px;
+    background: #2AC9BF; 
+    border-radius: 6px;
+}
+/* ====================header===================== */
+header{
+    max-width: 100vw;
+    padding-top: 50px;
+    /* top: -20px; */
+    top: -50px;
+    position: sticky;
+
+}
+
+.content{
+    min-width:1170px;
+    margin: 0 calc((100% - 1170px) / 2);
+}
+.nav-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+.nav-link .menu{
+    display: flex;
+}
+.nav-link .menu-item:not(:first-child) a{
+    color: #2F3A3B;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+.nav-link .menu-item{
+    display: inline-block;
+    margin: 0 40px;
+}
+.nav-link .menu-item:first-child a{
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.nav-link .login{
+    display: flex;
+}
+.nav-link .login .btn{
+    margin: 0 24px;
+}
+.nav-link .login .btn{
+    width: 108px;
+    height: 48px;
+    color: #494949;
+    border: 1px solid #2AC9BF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+
+}
+.nav-link .login .btn:hover{
+    background: #fff;
+    color: #2AC9BF;
+}
+
