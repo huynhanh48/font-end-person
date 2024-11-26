@@ -45,6 +45,10 @@ line-height: 72px;
 button{
     border-width: 0;
 }
+.images-test{
+    width: 400px;
+    height: 400px;
+}
 /* ====================header===================== */
 header{
     max-width: 100vw;
@@ -152,6 +156,7 @@ header{
 }
 .hero .content{
     display: flex;
+    padding-bottom: 79px;
 }
 .hero .info{
     width: 39%;
@@ -290,4 +295,207 @@ header{
     width: 100%;
     height: 100%;
     border-radius: 50%;
+}
+/* ====================featured===================== */
+.featured{
+    margin-top: 130px;
+}
+.featured .content{
+    display: flex;
+    flex-direction: column;
+}
+.featured .info{
+    width: 577px;
+    margin-bottom: 80px;
+}
+.feature-lorem{
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 5px;
+    margin-bottom: 18px;
+}
+.featured .title{
+font-size: 4.2rem;
+font-weight: 700;
+line-height: 1.5;
+margin-bottom: 18px;
+}
+.featured .row{
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+.featured .row .box{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    width: 102px;
+    height: 106px;background: #2AC9BF;
+    border-radius: 18px;
+    margin-bottom: 26px;
+
+}
+.featured .row .column-item{
+    width: calc((100% - 400px) / 3);
+}
+.featured .row .column-item:first-child  .box{
+    background: #FFC147;
+}
+.featured  .row .column-item:nth-child(2)  .box
+{
+    background: #FF947A;
+}
+.featured .row .column-item:last-child  .box{
+    background: #BF83FF;
+}
+.featured .column-item>strong{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.featured .column-item .desc{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+/* ====================course===================== */
+.course{
+    margin-top: 130px;
+}
+
+.course .info{
+    display: flex;
+    position: relative;
+    margin-bottom: 79px;
+}
+.course .info .row{
+    width: 50%;
+}
+.course .title{
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 19px;
+}
+.course .info a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    text-decoration: underline;
+    color: #2AC9BF;
+}
+.course .body .list{
+    display: flex;
+    gap: 47px;
+    overflow: hidden;
+    padding-bottom: 200px;
+    padding-top: 50px;
+}
+.course .body .list-item{
+    position: relative;
+    width: calc((100% - (2 * 47px) ) / 3);
+    flex-shrink: 0;
+    cursor: pointer;
+    transform: translateX(calc(-100% - 47px));
+   
+
+}
+.course .body .list-item .images{
+    width: 100%;
+    height: 393px;
+    border-radius: 8px;
+    opacity: 0.7;
+    position: relative;
+    transition: all .3s ease;
+}
+.course .body .list-item:hover .images{
+    width: 100%;
+    top: -50px;
+    opacity: 1;
+    transition-delay: 0.2s;
+    z-index: 2;
+    /* position:absolute ; */
+    /* top: -20px */
+}
+.course .body .price{
+    width: 325px;
+    background: #ffffff;
+    position: absolute;
+    margin: 0 auto;
+    top: 322px;
+    left: 0;
+    right: 0;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+}
+.course .body .info-child{
+    margin: 18px 25px;
+}
+.course .body .desc{
+font-size: 1.4rem;
+font-weight: 400;
+line-height: 21px;
+white-space: nowrap;
+margin-bottom: 6px;
+}
+.course .body .desc strong{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000000;
+}
+.course .body .row{
+    display: flex;
+    gap: 10px;
+}
+.course .body .desc.class{
+    position: relative;
+}
+
+.course .body .desc.class::before{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #2AC9BF;
+    border-radius: 50%;
+    margin-right:7px ;
+}
+.course .body{
+    position: relative;
+    padding-bottom: 65px;
+}
+.course .body .dots{
+    position: absolute;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    bottom: 100px;
+    left: 50%;
+
+}
+.course .body .dots .dot{
+    width: 6px;
+    height: 6px;
+    background-color: orange;
+    border-radius: 50%;
+}
+.course .body .dots .active{
+    background: #2AC9BF;
+}
+/* ====================rate===================== */
+.rate{
+    margin-top: 200px;
+}
+.rate .content{
+    display: flex;
+    justify-content: center;
+}
+.rate .content .row{
+    display: flex;
+    gap: 200px;
+}
+.rate .content .row .title{
+    margin-bottom: 11px;
 }
