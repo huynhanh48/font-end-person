@@ -686,3 +686,11 @@ footer .content .row .column:last-child .desc:last-child img{
     position: relative;
     left: 5px;
 }
+footer .content .desc.first{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
